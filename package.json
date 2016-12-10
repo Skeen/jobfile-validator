@@ -1,0 +1,16 @@
+{
+  "name": "jobfile-validator",
+  "version": "0.0.1",
+  "description": "Validate that a jobfile is well-formatted",
+  "main": "index.js",
+  "scripts": {
+    "predist": "mkdir -p dist; npm install; npm install browserify",
+    "dist": "./node_modules/browserify/bin/cmd.js -s knn_confusion --bare index.js -o dist/knn_confusion.js",
+    "clean": "rm -rf dist node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
